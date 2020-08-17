@@ -39,6 +39,10 @@ body {
     box-shadow: 0 0 7px 2px rgba(71, 10, 10, 0.8);
 }
 
+.arrow {
+    /* color: whitesmoke; */
+}
+
 .arrow:hover {
     transform: scale(1.05);
     text-shadow: 0 0 2px rgba(71, 10, 10, 0.8);
@@ -57,5 +61,21 @@ body {
     right: 2rem;
     top: 48%;
     font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#dots {
+    position: absolute;
+    bottom: 2rem;
+    /*za centriranje*/
+    /*ovo se odnosi na roditelja*/
+    left: 50%;
+    /*ovo se odnosi na element*/
+    transform: translate(-50%, 0);
+    font-size: 3rem;
+    cursor: default;
+}
+
+#dots * {
     cursor: pointer;
 }
