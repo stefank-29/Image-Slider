@@ -30,6 +30,11 @@ const imageSlider = (() => {
     }
     _deactivateAllDots();
     sliderImage.setAttribute('src', `./images/cover${imageIndex}.jpg`);
+    sliderImage.classList.remove('show');
+    setTimeout(function () {
+      //! forica da se skine i prikaze klasa
+      sliderImage.classList.add('show');
+    }, 1);
     _activateDot();
     showNextImg5sec();
   }
@@ -42,6 +47,10 @@ const imageSlider = (() => {
     }
     _deactivateAllDots();
     sliderImage.setAttribute('src', `./images/cover${imageIndex}.jpg`);
+    sliderImage.classList.remove('show');
+    setTimeout(function () {
+      sliderImage.classList.add('show');
+    }, 1);
     _activateDot();
     showNextImg5sec();
   }
@@ -51,6 +60,10 @@ const imageSlider = (() => {
     imageIndex = dotIndex;
     _deactivateAllDots();
     sliderImage.setAttribute('src', `./images/cover${imageIndex}.jpg`);
+    sliderImage.classList.remove('show');
+    setTimeout(function () {
+      sliderImage.classList.add('show');
+    }, 1);
     _activateDot();
     showNextImg5sec();
   }
