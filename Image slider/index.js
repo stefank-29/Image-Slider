@@ -81,14 +81,23 @@ const imageSlider = (() => {
   function getImageIndex() {
     return imageIndex;
   }
-
+  function changeImageOnButton(e) {
+    if (e.key === 'ArrowLeft') {
+      previousImage();
+    }
+    if (e.key === 'ArrowRight') {
+      nextImage();
+    }
+  }
   return {
     previousImage,
     nextImage,
     setImageIndex,
     getImageIndex,
     showNextImg5sec,
+    changeImageOnButton,
   };
 })();
 
 imageSlider.onload = imageSlider.showNextImg5sec();
+window.addEventListener('keydown', imageSlider.changeImageOnButton);
