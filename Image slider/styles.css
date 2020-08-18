@@ -88,4 +88,5 @@ body {
 }
 #dots *:hover {
   transform: scale(1.05);
+  text-shadow: 0 0 2px rgba(71, 10, 10, 0.8);
 }

@@ -3,12 +3,20 @@ const imageSlider = (() => {
   const sliderImage = document.querySelector('#slider img');
   let imageIndex = 1;
   function leftImage() {
-    imageIndex -= 1;
+    if (imageIndex !== 1) {
+      imageIndex -= 1;
+    } else {
+      imageIndex = 9;
+    }
     sliderImage.setAttribute('src', `./images/cover${imageIndex}.jpg`);
   }
 
   function rightImage() {
-    imageIndex += 1;
+    if (imageIndex !== 9) {
+      imageIndex += 1;
+    } else {
+      imageIndex = 1;
+    }
     sliderImage.setAttribute('src', `./images/cover${imageIndex}.jpg`);
   }
 
