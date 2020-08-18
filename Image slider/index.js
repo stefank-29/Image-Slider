@@ -1,5 +1,3 @@
-// todo animacija za promenu slika
-// todo animacija za tackice kad se promeni
 const imageSlider = (() => {
   const sliderImage = document.querySelector('#slider img');
   const dots = document.querySelector('#dots');
