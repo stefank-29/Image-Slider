@@ -105,7 +105,8 @@
     "no-shadow": "warn",
     "spaced-comment": "off",
     "no-plusplus": "off",
-    "no-new": "off"
+    "no-new": "off",
+    "no-use-before-define": "warn"
   },
 
   "plugins": [
